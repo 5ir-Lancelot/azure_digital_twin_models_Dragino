@@ -1,0 +1,59 @@
+[
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mydevicesinc:dragino:lsph01;1",
+    "@type": "Interface",
+    "displayName": "Dragino Soil pH Sensor LSPH01",
+    "description": "Soil pH",
+    "contents": [
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "pH",
+        "description": "soil pH in unitless",
+        "name": "pH",
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "Soil Temp",
+        "description": "Soil Temperature in degC",
+        "name": "TEMP_SOIL",
+        "schema": "double",
+	"unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "Battery",
+        "description": "Actually Voltage of the Power supply, because Battery was disconnected.",
+        "name": "Bat",
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "Signal",
+        "description": "Signal",
+        "name": "channel_100",
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "displayName": "TempC_DS18B20",
+        "description": "TempC_DS18B20",
+        "name": "TempC_DS18B20",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      }
+    ]
+  }
+]
